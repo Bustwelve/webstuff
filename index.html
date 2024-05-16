@@ -11,10 +11,13 @@
             color: black;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
         header {
             text-align: center;
             padding: 20px;
+            background-color: #f0f0f0;
+            position: relative;
         }
         header img {
             width: 100px;
@@ -23,8 +26,11 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #f0f0f0;
+            background-color: #ffcc00;
             padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             margin: 0 15px;
@@ -32,9 +38,25 @@
             color: black;
         }
         section {
-            padding: 20px;
+            padding: 60px 20px;
             max-width: 800px;
             margin: auto;
+            position: relative;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+        }
+        .parallax.history {
+            background-image: url('https://source.unsplash.com/1600x900/?nature');
+        }
+        .parallax.taste {
+            background-image: url('https://source.unsplash.com/1600x900/?fruit');
+        }
+        .parallax.health-benefits {
+            background-image: url('https://source.unsplash.com/1600x900/?healthy');
         }
         footer {
             text-align: center;
@@ -72,15 +94,15 @@
         <a href="#taste">Taste</a>
         <a href="#health-benefits">Health Benefits</a>
     </nav>
-    <section id="history">
+    <section id="history" class="parallax history">
         <h2>History of the Wampi Fruit</h2>
         <p>The Wampi fruit, native to southern China and Southeast Asia, has been cultivated for centuries. Known for its unique flavor and health benefits, it has become a popular ingredient in traditional medicine and culinary practices.</p>
     </section>
-    <section id="taste">
+    <section id="taste" class="parallax taste">
         <h2>What It Tastes Like</h2>
         <p>The Wampi fruit has a distinctive taste that combines sweet and tangy flavors. Its juicy flesh is reminiscent of citrus fruits, with a hint of spice that makes it a delightful and refreshing treat.</p>
     </section>
-    <section id="health-benefits">
+    <section id="health-benefits" class="parallax health-benefits">
         <h2>Health Benefits of Drinking Wampi Fruit Juice</h2>
         <p>Wampi fruit juice is rich in vitamins and antioxidants, making it a healthy choice for boosting the immune system. It is known to aid digestion, improve skin health, and provide a natural source of energy.</p>
     </section>
