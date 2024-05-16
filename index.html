@@ -11,52 +11,75 @@
             color: black;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
         }
         header {
-            text-align: center;
-            padding: 20px;
-            background-color: #f0f0f0;
-            position: relative;
-        }
-        header img {
-            width: 100px;
-            height: auto;
-        }
-        nav {
             display: flex;
-            justify-content: center;
-            background-color: #ffcc00;
-            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
         }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
         nav a {
-            margin: 0 15px;
             text-decoration: none;
             color: black;
+            font-weight: bold;
         }
-        section {
-            padding: 60px 20px;
-            max-width: 800px;
-            margin: auto;
-            position: relative;
+        .header-icons {
+            display: flex;
+            gap: 15px;
         }
-        .parallax {
-            background-attachment: fixed;
-            background-size: cover;
-            background-repeat: no-repeat;
+        .header-icons a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            background: url('https://source.unsplash.com/1600x900/?fruit') no-repeat center center/cover;
             color: white;
+            text-align: center;
+            padding: 20px;
         }
-        .parallax.history {
-            background-image: url('https://source.unsplash.com/1600x900/?nature');
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
         }
-        .parallax.taste {
-            background-image: url('https://source.unsplash.com/1600x900/?fruit');
+        .hero p {
+            font-size: 1.5em;
         }
-        .parallax.health-benefits {
-            background-image: url('https://source.unsplash.com/1600x900/?healthy');
+        .hero .cta {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #ffcc00;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .content section {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
         }
         footer {
             text-align: center;
@@ -71,41 +94,43 @@
             text-decoration: none;
             color: black;
         }
-        .checkout-button {
-            display: block;
-            width: 200px;
-            margin: 20px auto;
-            padding: 10px;
-            background-color: #ffcc00;
-            color: black;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-        }
     </style>
 </head>
 <body>
     <header>
         <img src="logo-hakka-wampi.jpg" alt="Hakka Wampi Logo">
-        <h1>Hakka Wampi - Wampi Fruit Juice</h1>
+        <nav>
+            <a href="#history">History</a>
+            <a href="#taste">Taste</a>
+            <a href="#health-benefits">Health Benefits</a>
+        </nav>
+        <div class="header-icons">
+            <a href="#">🔍</a>
+            <a href="#">👤</a>
+            <a href="#">🛒</a>
+        </div>
     </header>
-    <nav>
-        <a href="#history">History</a>
-        <a href="#taste">Taste</a>
-        <a href="#health-benefits">Health Benefits</a>
-    </nav>
-    <section id="history" class="parallax history">
-        <h2>History of the Wampi Fruit</h2>
-        <p>The Wampi fruit, native to southern China and Southeast Asia, has been cultivated for centuries. Known for its unique flavor and health benefits, it has become a popular ingredient in traditional medicine and culinary practices.</p>
+    <section class="hero">
+        <div>
+            <h1>Clean, Simple, Delicious</h1>
+            <p>Say hello to the new clear protein</p>
+            <a href="#" class="cta">Shop Now</a>
+        </div>
     </section>
-    <section id="taste" class="parallax taste">
-        <h2>What It Tastes Like</h2>
-        <p>The Wampi fruit has a distinctive taste that combines sweet and tangy flavors. Its juicy flesh is reminiscent of citrus fruits, with a hint of spice that makes it a delightful and refreshing treat.</p>
-    </section>
-    <section id="health-benefits" class="parallax health-benefits">
-        <h2>Health Benefits of Drinking Wampi Fruit Juice</h2>
-        <p>Wampi fruit juice is rich in vitamins and antioxidants, making it a healthy choice for boosting the immune system. It is known to aid digestion, improve skin health, and provide a natural source of energy.</p>
-    </section>
+    <div class="content">
+        <section id="history">
+            <h2>History of the Wampi Fruit</h2>
+            <p>The Wampi fruit, native to southern China and Southeast Asia, has been cultivated for centuries. Known for its unique flavor and health benefits, it has become a popular ingredient in traditional medicine and culinary practices.</p>
+        </section>
+        <section id="taste">
+            <h2>What It Tastes Like</h2>
+            <p>The Wampi fruit has a distinctive taste that combines sweet and tangy flavors. Its juicy flesh is reminiscent of citrus fruits, with a hint of spice that makes it a delightful and refreshing treat.</p>
+        </section>
+        <section id="health-benefits">
+            <h2>Health Benefits of Drinking Wampi Fruit Juice</h2>
+            <p>Wampi fruit juice is rich in vitamins and antioxidants, making it a healthy choice for boosting the immune system. It is known to aid digestion, improve skin health, and provide a natural source of energy.</p>
+        </section>
+    </div>
     <footer>
         <div class="social-media">
             <a href="#">Facebook</a>
