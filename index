@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakka Wampi - Wampi Fruit Juice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .social-media {
+            margin-top: 20px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .checkout-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #ffcc00;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo-hakka-wampi.jpg" alt="Hakka Wampi Logo">
+        <h1>Hakka Wampi - Wampi Fruit Juice</h1>
+    </header>
+    <nav>
+        <a href="#history">History</a>
+        <a href="#taste">Taste</a>
+        <a href="#health-benefits">Health Benefits</a>
+    </nav>
+    <section id="history">
+        <h2>History of the Wampi Fruit</h2>
+        <p>The Wampi fruit, native to southern China and Southeast Asia, has been cultivated for centuries. Known for its unique flavor and health benefits, it has become a popular ingredient in traditional medicine and culinary practices.</p>
+    </section>
+    <section id="taste">
+        <h2>What It Tastes Like</h2>
+        <p>The Wampi fruit has a distinctive taste that combines sweet and tangy flavors. Its juicy flesh is reminiscent of citrus fruits, with a hint of spice that makes it a delightful and refreshing treat.</p>
+    </section>
+    <section id="health-benefits">
+        <h2>Health Benefits of Drinking Wampi Fruit Juice</h2>
+        <p>Wampi fruit juice is rich in vitamins and antioxidants, making it a healthy choice for boosting the immune system. It is known to aid digestion, improve skin health, and provide a natural source of energy.</p>
+    </section>
+    <footer>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <a href="#" class="checkout-button">Buy Now</a>
+    </footer>
+</body>
+</html>
